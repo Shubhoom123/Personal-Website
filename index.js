@@ -32,9 +32,11 @@ window.addEventListener('scroll', () => {
     });
     
     navLinks.forEach(link => {
-        link.style.color = '#707070';
+        link.style.color = '#FFFFFF';  // Keep all links white
+        link.style.opacity = '0.8';     // Slightly dimmed by default
+        
         if (link.getAttribute('href').slice(1) === current) {
-            link.style.color = '#2D2D2D';
+            link.style.opacity = '1';   // Full brightness for active link
         }
     });
 });
